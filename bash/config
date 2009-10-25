@@ -1,0 +1,4 @@
+. ~/bin/dotfiles/bash/bash_prompt_color
+
+PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\] \n→ "
+
