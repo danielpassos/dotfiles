@@ -1,5 +1,5 @@
 export EDITOR="mate -w"
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:/opt/local/bin
 export TERM="xterm-color"
 

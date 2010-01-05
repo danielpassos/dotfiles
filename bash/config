@@ -1,4 +1,10 @@
 . ~/bin/dotfiles/bash/bash_prompt_color
 
-PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\] \n→ "
+# Terminal
+PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EGREEN\]\$(vcprompt)\[$NO_COLOR\] \n→ "
+
+# RVM
+if [[ -s /usr/local/rvm/scripts/rvm ]] ; then source /usr/local/rvm/scripts/rvm ; fi
+
+
 
