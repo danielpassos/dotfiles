@@ -4,7 +4,11 @@
 PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EGREEN\]\$(vcprompt)\[$NO_COLOR\] \n→ "
 
 # RVM
-if [[ -s /usr/local/rvm/scripts/rvm ]] ; then source /usr/local/rvm/scripts/rvm ; fi
+if [[ -s $HOME/.rvm/scripts/rvm ]] ; then 
+	source $HOME/.rvm/scripts/rvm
+fi
+
+	
 
 
 
