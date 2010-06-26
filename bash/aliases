@@ -1,5 +1,5 @@
 # Bash
-alias ls="ls -Gla"
+alias ls="ls -Glah"
 
 # TextMate
 alias et="mate"
