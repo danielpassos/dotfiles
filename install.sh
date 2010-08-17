@@ -15,4 +15,4 @@ cp ./script/git_completion.sh ~/bin/dotfiles/script/
 
 # Links
 
-ln ~/.bashrc ~/bin/dotfiles/bashrc
+ln -sF ~/.bashrc ~/bin/dotfiles/bashrc
