@@ -1,4 +1,5 @@
 ## INSTALLING
 
-    ./install.sh
+./install.sh
+
 
