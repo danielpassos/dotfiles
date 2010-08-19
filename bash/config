@@ -1,14 +1,22 @@
 . ~/bin/dotfiles/bash/bash_prompt_color
 
-# Terminal
-PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EGREEN\]\$(vcprompt)\[$NO_COLOR\] \n→ "
+# Show the git branch and dirty state in the prompt.
+# Borrowed from: http://henrik.nyh.se/2008/12/git-dirty-prompt
+
+function parse_git_dirty {
+	[[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+}
+
+function parse_git_branch {
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\[git\:\1\] $(parse_git_dirty)/"
+}
+
+# PS1
+PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EGREEN\]\$(parse_git_branch)\[$NO_COLOR\] \n→ "
 
 # RVM
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then 
 	source $HOME/.rvm/scripts/rvm
 fi
-
-	
-
 
 
