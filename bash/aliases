@@ -12,6 +12,7 @@ alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias glg='git log --pretty=format:"%h %s" --graph'
 alias gk='gitk --all &'
 
 ############################################################
