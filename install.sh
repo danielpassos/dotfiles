@@ -11,6 +11,11 @@ cp ./bash/* ~/bin/dotfiles/bash/
 mkdir -p ~/bin/dotfiles/script
 cp ./script/* ~/bin/dotfiles/script/
 
+# Linode Tunel Scripts
+
+mkdir -p ~/bin/dotfiles/tunel
+cp ./tunel/* ~/bin/dotfiles/tunel/
+
 # Links
 
 ln -sF ~/bin/dotfiles/bashrc ~/.bashrc
