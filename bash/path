@@ -6,4 +6,5 @@ if [ -d ~/bin ] ; then
   PATH="~/bin:${PATH}"
 fi
 
-PATH=.:${PATH}
+PATH=.:$PATH
+PATH=$PATH:/usr/local/bin:/usr/local/sbin:/Library/PostgreSQL/8.3/bin/
