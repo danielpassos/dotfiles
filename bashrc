@@ -4,3 +4,4 @@
 . ~/bin/dotfiles/bash/path
 . ~/bin/dotfiles/script/gem_completion.sh
 . ~/bin/dotfiles/script/git_completion.sh
+. ~/bin/dotfiles/script/tmux_completion.sh
