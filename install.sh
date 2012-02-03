@@ -13,4 +13,5 @@ cp ./script/* ~/bin/dotfiles/script/
 
 # Links
 
+mv ~/.bashrc ~/bashrc_backup
 ln -sF ~/bin/dotfiles/bashrc ~/.bashrc
