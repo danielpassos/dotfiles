@@ -1,3 +1,6 @@
+# Remove old version
+rm -rf ~/bin/dotfiles
+
 # Bash Files
 
 cp ./.bash_profile ~/
@@ -13,5 +16,9 @@ cp ./script/* ~/bin/dotfiles/script/
 
 # Links
 
-mv ~/.bashrc ~/bashrc_backup
 ln -sF ~/bin/dotfiles/bashrc ~/.bashrc
+
+# Programs
+
+mkdir -p ~/bin/dotfiles/programs
+cp ./programs/* ~/bin/dotfiles/programs/
