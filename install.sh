@@ -22,3 +22,5 @@ ln -sF ~/bin/dotfiles/bashrc ~/.bashrc
 
 mkdir -p ~/bin/dotfiles/programs
 cp ./programs/* ~/bin/dotfiles/programs/
+
+cp ./.gitconfig ~/
