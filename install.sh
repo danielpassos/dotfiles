@@ -18,9 +18,8 @@ cp ./script/* ~/bin/dotfiles/script/
 
 ln -sF ~/bin/dotfiles/bashrc ~/.bashrc
 
-# Programs
+# Git
 
-mkdir -p ~/bin/dotfiles/programs
-cp ./programs/* ~/bin/dotfiles/programs/
-
-cp ./.gitconfig ~/
+cp ./git/gitconfig ~/.gitconfig
+cp ./git/gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
