@@ -3,7 +3,7 @@
 ############################################################
 
 if [ -d ~/bin ] ; then
-  PATH="~/bin:~/bin/dotfiles/programs:${PATH}"
+  PATH="~/bin:${PATH}"
 fi
 
 PATH=.:$PATH
