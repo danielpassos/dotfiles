@@ -16,7 +16,7 @@ cp ./script/* ~/.bin/dotfiles/script/
 
 # Links
 
-ln -sF ~/.bin/dotfiles/bashrc ~/.bashrc
+ln -sf ~/.bin/dotfiles/bashrc ~/.bashrc
 
 # Git
 
