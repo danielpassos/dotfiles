@@ -6,3 +6,5 @@
 . ~/.bin/dotfiles/script/git_completion.sh
 . ~/.bin/dotfiles/script/gem_completion.sh
 . ~/.bin/dotfiles/script/tmux_completion.sh
+
+. ~/local_alias
