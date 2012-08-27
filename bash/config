@@ -1,4 +1,4 @@
-. ~/bin/dotfiles/bash/bash_prompt_color
+. ~/.bin/dotfiles/bash/bash_prompt_color
 
 # Show the git branch and dirty state in the prompt.
 # Borrowed from: http://henrik.nyh.se/2008/12/git-dirty-prompt
