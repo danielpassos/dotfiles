@@ -1,11 +1,15 @@
 ################################################################################
 ## Bash
 ################################################################################
-alias ls="ls -Glah"
+
+alias ls='ls -Glah --color=auto'
 alias lsd='ls -l | grep "^d"'		# List only directories
 
 alias ..='cd ..'
 alias ...="cd ../.."
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 

@@ -1,10 +1,14 @@
-. ~/.bin/dotfiles/bash/env
-. ~/.bin/dotfiles/bash/config
-. ~/.bin/dotfiles/bash/aliases
-. ~/.bin/dotfiles/bash/path
+if [ -e ~/.bashrc.ori ]; then
+  . ~/.bashrc.ori
+fi
 
-. ~/.bin/dotfiles/script/git_completion.sh
-. ~/.bin/dotfiles/script/gem_completion.sh
-. ~/.bin/dotfiles/script/tmux_completion.sh
+. ~/.dotfiles/bash/env
+. ~/.dotfiles/bash/config
+. ~/.dotfiles/bash/aliases
+. ~/.dotfiles/bash/path
 
-. ~/local_alias
+. ~/.dotfiles/script/git_completion.sh
+. ~/.dotfiles/script/gem_completion.sh
+. ~/.dotfiles/script/tmux_completion.sh
+
+. ~/.local_config

@@ -2,8 +2,8 @@
 ## PATH
 ############################################################
 
-if [ -d ~/.bin ] ; then
-  PATH="~/.bin:${PATH}"
+if [ -d ~/.dotfiles ] ; then
+  PATH="~/.dotfiles:${PATH}"
 fi
 
 PATH=.:$PATH

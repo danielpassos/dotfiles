@@ -1,4 +1,4 @@
-. ~/.bin/dotfiles/bash/bash_prompt_color
+. ~/.dotfiles/bash/bash_prompt_color
 
 # Show the git branch and dirty state in the prompt.
 # Borrowed from: http://henrik.nyh.se/2008/12/git-dirty-prompt
@@ -18,5 +18,3 @@ PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EGREEN\]\$(parse_git_branch)\[$NO_COLOR\]
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then 
 	source $HOME/.rvm/scripts/rvm
 fi
-
-

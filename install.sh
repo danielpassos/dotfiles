@@ -1,22 +1,30 @@
 # Remove old version
-rm -rf ~/.bin/dotfiles
+rm -rf ~/.dotfiles
 
 # Bash Files
 
+if [ ! -e ~/.bashrc.ori ]; then
+	mv ~/.bashrc ~/.bashrc.ori
+fi
+
+if [ ! -e ~/.local_config ]; then
+	touch ~/.local_config
+fi
+
 cp ./.bash_profile ~/
 
-mkdir -p ~/.bin/dotfiles/bash
-cp ./bashrc  ~/.bin/dotfiles/
-cp ./bash/* ~/.bin/dotfiles/bash/
+mkdir -p ~/.dotfiles/bash
+cp ./bashrc  ~/.dotfiles/
+cp ./bash/* ~/.dotfiles/bash/
 
 # Scripts Files
 
-mkdir -p ~/.bin/dotfiles/script
-cp ./script/* ~/.bin/dotfiles/script/
+mkdir -p ~/.dotfiles/script
+cp ./script/* ~/.dotfiles/script/
 
 # Links
 
-ln -sf ~/.bin/dotfiles/bashrc ~/.bashrc
+ln -sf ~/.dotfiles/bashrc ~/.bashrc
 
 # Git
 
