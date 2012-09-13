@@ -3,7 +3,7 @@ rm -rf ~/.dotfiles
 
 # Bash Files
 
-if [ ! -e ~/.bashrc.ori ]; then
+if [ ! -e ~/.bashrc.ori ] && [ -e ~/.bashrc ]; then
 	mv ~/.bashrc ~/.bashrc.ori
 fi
 

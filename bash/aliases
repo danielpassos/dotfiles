@@ -1,18 +1,25 @@
+system=`uname`
+
 ################################################################################
 ## Bash
 ################################################################################
 
-alias ls='ls -Glah --color=auto'
+alias ls='ls -Glah'
+alias grep='grep'
+alias fgrep='fgrep'   
+
+if [[ "$system" == 'Linux' ]]; then
+   alias ls='ls -Glah --color=auto'
+   alias grep='grep --color=auto'
+   alias fgrep='fgrep --color=auto'
+fi
+
 alias lsd='ls -l | grep "^d"'		# List only directories
 
 alias ..='cd ..'
 alias ...="cd ../.."
 
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
 alias psgrep="ps aux | egrep -v egrep | egrep"
 
 ################################################################################
