@@ -11,10 +11,12 @@ function parse_git_branch {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\[git\:\1\] $(parse_git_dirty)/"
 }
 
-# PS1
-PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EGREEN\]\$(parse_git_branch)\[$NO_COLOR\] \n→ "
+function rvm_version {
+    RVM_VERSION=`~/.rvm/bin/rvm-prompt`
+    if [[ -f "$(pwd)/Rakefile" ]] && [[ ! -z "$RVM_VERSION" ]]; then
+        echo "[${RVM_VERSION}]"
+    fi
+}
 
-# RVM
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then 
-	source $HOME/.rvm/scripts/rvm
-fi
+# PS1
+PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EBLUE\]\$(rvm_version) \[$EGREEN\]\$(parse_git_branch)\[$NO_COLOR\] \n→ "

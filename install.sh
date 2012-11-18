@@ -26,6 +26,9 @@ cp ./script/* ~/.dotfiles/script/
 
 ln -sf ~/.dotfiles/bashrc ~/.bashrc
 
+# Bin folder
+mkdir -p ~/.dotfiles/bin
+
 # Git
 
 cp ./git/gitconfig ~/.gitconfig

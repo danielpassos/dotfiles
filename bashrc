@@ -12,3 +12,7 @@ fi
 . ~/.dotfiles/script/tmux_completion.sh
 
 . ~/.local_config
+
+if [ -e ~/.rvm/scripts/rvm ] ; then
+    . ~/.rvm/scripts/rvm
+fi

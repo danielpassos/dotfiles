@@ -2,9 +2,10 @@
 ## PATH
 ############################################################
 
-if [ -d ~/.dotfiles ] ; then
-  PATH="~/.dotfiles:${PATH}"
-fi
-
 PATH=.:$PATH
+PATH=$PATH:$HOME/.dotfiles/bin
 PATH=$PATH:/usr/local/bin:/usr/local/sbin
+
+if [ -d $HOME/.rvm ] ; then
+    PATH=$PATH:$HOME/.rvm/bin
+fi
