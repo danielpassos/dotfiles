@@ -1,5 +1,6 @@
-## INSTALLING
+# dotfiles
 
-./install.sh
-
-
+## Installing
+```
+sh install.sh
+```
