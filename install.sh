@@ -27,7 +27,11 @@ cp ./script/* ~/.dotfiles/script/
 ln -sf ~/.dotfiles/bashrc ~/.bashrc
 
 # Bin folder
+
 mkdir -p ~/.dotfiles/bin
+
+# tmux
+cp ./tmux/tmux.conf ~/.tmux.conf
 
 # Git
 
