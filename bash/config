@@ -21,4 +21,4 @@ function rvm_version {
 }
 
 # PS1
-PS1="\n\[$ERED\][\u]: \[$EWHITE\]\w \[$EBLUE\]\$(rvm_version)\[$EGREEN\]\$(parse_git_branch)\[$NO_COLOR\] \n→ "
+PS1="\n\[$BIRed\][\u]: \[$BIWhite\]\w \[$BIPurple\]\$(rvm_version)\[$BIGreen\]\$(parse_git_branch)\[$Color_Off\] \n→ "
