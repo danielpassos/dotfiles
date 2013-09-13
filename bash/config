@@ -20,5 +20,15 @@ function rvm_version {
 	fi    
 }
 
+function user {
+	local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
+  	local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
+  	if [ $SSH2_IP ] || [ $SSH_IP ] ; then
+    	echo "\u@\h"
+    else
+    	echo "\u"
+  	fi
+}
+
 # PS1
-PS1="\n\[$BIRed\][\u]: \[$BIWhite\]\w \[$BIPurple\]\$(rvm_version)\[$BIGreen\]\$(parse_git_branch)\[$Color_Off\] \n→ "
+PS1="\n\[$BIRed\][$(user)]: \[$BIWhite\]\w \[$BIPurple\]\$(rvm_version)\[$BIGreen\]\$(parse_git_branch)\[$Color_Off\] \n→ "
