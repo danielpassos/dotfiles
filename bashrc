@@ -10,6 +10,8 @@ fi
 . ~/.dotfiles/script/git_completion.sh
 . ~/.dotfiles/script/gem_completion.sh
 . ~/.dotfiles/script/tmux_completion.sh
+. ~/.dotfiles/script/maven_completion.sh
+. ~/.dotfiles/script/vagrant_completion.sh
 
 . ~/.local_config
 
