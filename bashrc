@@ -17,4 +17,5 @@ fi
 
 if [ -e ~/.rvm/scripts/rvm ] ; then
     . ~/.rvm/scripts/rvm
+    . ~/.rvm/scripts/completion
 fi
