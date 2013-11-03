@@ -4,12 +4,13 @@
 # Borrowed from: http://henrik.nyh.se/2008/12/git-dirty-prompt
 
 function parse_git_dirty {
-	[[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
 }
 
 function parse_git_branch {
-	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\[git\:\1\] $(parse_git_dirty)/"
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\[git\:\1\] $(parse_git_dirty)/"
 }
+
 
 function rvm_version {
 	if [ -d $HOME/.rvm ] ; then
@@ -22,12 +23,12 @@ function rvm_version {
 
 function user {
 	local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
-  	local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
-  	if [ $SSH2_IP ] || [ $SSH_IP ] ; then
-    	echo "\u@\h"
-    else
-    	echo "\u"
-  	fi
+  local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
+  if [ $SSH2_IP ] || [ $SSH_IP ] ; then
+  	echo "\u@\h"
+  else
+  	echo "\u"
+  fi
 }
 
 # PS1
