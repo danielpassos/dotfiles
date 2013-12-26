@@ -11,6 +11,10 @@ if [ ! -e ~/.local_config ]; then
 	touch ~/.local_config
 fi
 
+if [[ "$OSTYPE" == "darwin"* ]] && [ ! -e /etc/launchd.conf ]; then
+	sudo touch /etc/launchd.conf
+fi
+
 cp ./.bash_profile ~/
 
 mkdir -p ~/.dotfiles/bash
