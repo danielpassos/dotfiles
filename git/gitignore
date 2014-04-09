@@ -6,7 +6,38 @@
 .Spotlight-V100
 .Trashes
 
-########## IntelliJ #########
+########## Intellij #########
 
-*.idea/
 *.iml
+.idea/
+out/
+gen-external-apklibs/
+
+########## Eclipse ##########
+
+.classpath
+.settings/
+.project
+classes/
+libs/
+bin/
+
+########### Maven ###########
+
+target/
+tmp/
+
+########## Gradle ###########
+
+.gradle/
+build/
+
+########## Android ##########
+
+local.properties
+project.properties
+ant.properties
+build.xml
+proguard-project.txt
+gen/
+lint.xml
