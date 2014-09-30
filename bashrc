@@ -7,6 +7,7 @@ fi
 . ~/.dotfiles/bash/aliases
 . ~/.dotfiles/bash/path
 
+. ~/.dotfiles/script/cordova_completion.sh
 . ~/.dotfiles/script/git_completion.sh
 . ~/.dotfiles/script/gem_completion.sh
 . ~/.dotfiles/script/tmux_completion.sh
