@@ -20,3 +20,11 @@
   	added = yellow
   	changed = green
   	untracked = cyan
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    lg = log --pretty=format:'%h %s' --graph
+    pullify = "config --add remote.forked.fetch '+refs/pull/*/head:refs/remotes/forked/pr/*'"
+

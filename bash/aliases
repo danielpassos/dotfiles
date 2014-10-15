@@ -30,14 +30,7 @@ alias rv='echo $(~/.rvm/bin/rvm-prompt)'
 ################################################################################
 ## git
 ################################################################################
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status'
-alias glg='git log --pretty=format:"%h %s" --graph'
 alias gk='gitk --all 2>/dev/null &'
-alias undopush="git push -f origin HEAD^:master"
 
 ################################################################################
 ## TextMate
