@@ -26,5 +26,5 @@
     st = status
     br = branch
     lg = log --pretty=format:'%h %s' --graph
-    pullify = "config --add remote.forked.fetch '+refs/pull/*/head:refs/remotes/forked/pr/*'"
+    pullify = "config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*'"
 
