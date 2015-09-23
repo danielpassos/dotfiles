@@ -15,24 +15,20 @@ if [[ "$OSTYPE" == "darwin"* ]] && [ ! -e /etc/launchd.conf ]; then
 	sudo touch /etc/launchd.conf
 fi
 
-cp ./.bash_profile ~/
+# Install bash files
 
 mkdir -p ~/.dotfiles/bash
-cp ./bashrc  ~/.dotfiles/
-cp ./bash/* ~/.dotfiles/bash/
-
-# Scripts Files
-
 mkdir -p ~/.dotfiles/script
-cp ./script/* ~/.dotfiles/script/
-
-# Links
-
-ln -sf ~/.dotfiles/bashrc ~/.bashrc
-
-# Bin folder
-
 mkdir -p ~/.dotfiles/bin
+
+cp ./bash/*         ~/.dotfiles/bash/
+cp ./script/*       ~/.dotfiles/script/
+
+cp ./bashrc         ~/.dotfiles/
+cp ./bash_profile   ~/.dotfiles/
+
+ln -sf ~/.dotfiles/bashrc        ~/.bashrc
+ln -sf ~/.dotfiles/bash_profile  ~/.bash_profile
 
 # tmux
 cp ./tmux/tmux.conf ~/.tmux.conf
