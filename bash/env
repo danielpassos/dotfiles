@@ -1,6 +1,3 @@
 system=`uname`
-if [[ "$system" == 'Linux' ]]; then
-   export EDITOR="sublime-text-2"
-elif [[ "$system" == 'Darwin' ]]; then
-   export EDITOR="mate -w"
-fi
+
+export EDITOR="=sublime-text-2"

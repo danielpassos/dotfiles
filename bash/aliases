@@ -6,7 +6,7 @@ system=`uname`
 
 alias ls='ls -Glah'
 alias grep='grep'
-alias fgrep='fgrep'   
+alias fgrep='fgrep'
 
 if [[ "$system" == 'Linux' ]]; then
    alias ls='ls -Glah --color=auto'
@@ -31,9 +31,3 @@ alias rv='echo $(~/.rvm/bin/rvm-prompt)'
 ## git
 ################################################################################
 alias gk='gitk --all 2>/dev/null &'
-
-################################################################################
-## TextMate
-################################################################################
-alias et="mate"
-alias ett="mate ."
