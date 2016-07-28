@@ -7,8 +7,8 @@ if [ ! -e ~/.bashrc.ori ] && [ -e ~/.bashrc ]; then
 	mv ~/.bashrc ~/.bashrc.ori
 fi
 
-if [ ! -e ~/.local_config ]; then
-	touch ~/.local_config
+if [ ! -e ~/.local_config.sh ]; then
+	touch ~/.local_config.sh
 fi
 
 if [ "$OSTYPE" == "darwin"* ] && [ ! -e /etc/launchd.conf ]; then
