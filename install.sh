@@ -22,7 +22,6 @@ mkdir -p ~/.dotfiles/script
 mkdir -p ~/.dotfiles/bin
 
 cp ./bash/*         ~/.dotfiles/bash/
-cp ./script/*       ~/.dotfiles/script/
 
 cp ./bashrc         ~/.dotfiles/
 cp ./bash_profile   ~/.dotfiles/
