@@ -4,6 +4,8 @@ system=`uname`
 ## Bash
 ################################################################################
 
+alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
+
 alias ls='ls -Glah'
 alias grep='grep'
 alias fgrep='fgrep'
@@ -17,7 +19,10 @@ fi
 alias lsd='ls -l | grep "^d"'		# List only directories
 
 alias ..='cd ..'
-alias ...="cd ../.."
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias hosts='sudo vim /etc/hosts'
 
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias psgrep="ps aux | egrep -v egrep | egrep"

@@ -3,7 +3,7 @@ if [ -e ~/.bashrc.ori ]; then
 fi
 
 . ~/.dotfiles/bash/env
-. ~/.dotfiles/bash/config
+. ~/.dotfiles/bash/prompt
 . ~/.dotfiles/bash/aliases
 . ~/.dotfiles/bash/path
 
