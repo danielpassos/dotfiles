@@ -1,5 +1,3 @@
-. ~/.dotfiles/bash/bash_prompt_color
-
 # Show the git branch and dirty state in the prompt.
 # Borrowed from: http://henrik.nyh.se/2008/12/git-dirty-prompt
 
@@ -18,7 +16,7 @@ function rvm_version {
     	if [[ -f "$(pwd)/Rakefile" ]] && [[ ! -z "$RVM_VERSION" ]]; then
 	        echo "[${RVM_VERSION}] "
 	    fi
-	fi    
+	fi
 }
 
 function user {
@@ -31,5 +29,19 @@ function user {
   fi
 }
 
-# PS1
-PS1="\n\[$BIRed\][$(user)]: \[$BIWhite\]\w \[$BIPurple\]\$(rvm_version)\[$BIGreen\]\$(parse_git_branch)\[$Color_Off\] \n→ "
+bash_prompt() {
+
+  # Colors from http://wiki.archlinux.org/index.php/Color_Bash_Prompt
+  BIRed='\e[1;91m'        # Red
+  BIGreen='\e[1;92m'      # Green
+  BIPurple='\e[1;95m'     # Purple
+  BIWhite='\e[1;97m'      # White
+  Color_Off='\e[0m'       # Text Reset
+
+  # PS1
+  PS1="\n\[$BIRed\][$(user)]: \[$BIWhite\]\w \[$BIPurple\]\$(rvm_version)\[$BIGreen\]\$(parse_git_branch)\[$Color_Off\] \n→ "
+
+}
+
+bash_prompt
+unset bash_prompt
