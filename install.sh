@@ -1,13 +1,14 @@
 # Remove old version
+
 rm -rf ~/.dotfiles
 
 # Bash Files
 
-if [ ! -e ~/.bashrc.ori ] && [ -e ~/.bashrc ]; then
+if [ -f ~/.bashrc ]; then
 	mv ~/.bashrc ~/.bashrc.ori
 fi
 
-if [ ! -e ~/.local_config.sh ]; then
+if [ ! -f ~/.local_config.sh ]; then
 	touch ~/.local_config.sh
 fi
 
@@ -30,6 +31,7 @@ ln -sf ~/.dotfiles/bashrc        ~/.bashrc
 ln -sf ~/.dotfiles/bash_profile  ~/.bash_profile
 
 # tmux
+
 cp ./tmux/tmux.conf ~/.tmux.conf
 
 # Git
