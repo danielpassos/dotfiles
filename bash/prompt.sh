@@ -2,7 +2,7 @@
 # Borrowed from: http://henrik.nyh.se/2008/12/git-dirty-prompt
 
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
 
 function parse_git_branch {
