@@ -15,3 +15,8 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
 fi
+
+# nvm
+if [ -f "$HOME/.nvm/nvm.sh" ]  ; then
+	. "$HOME/.nvm/nvm.sh"
+fi
