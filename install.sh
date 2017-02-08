@@ -19,7 +19,6 @@ fi
 # Install bash files
 
 mkdir -p ~/.dotfiles/bash
-mkdir -p ~/.dotfiles/script
 mkdir -p ~/.dotfiles/bin
 
 cp ./bash/*         ~/.dotfiles/bash/
