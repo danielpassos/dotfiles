@@ -4,7 +4,6 @@
 
 PATH=.:$PATH
 PATH=$PATH:$HOME/.dotfiles/bin
-PATH=$PATH:/usr/local/bin:/usr/local/sbin
 
 # RVM
 if [ -d $HOME/.rvm ] ; then
