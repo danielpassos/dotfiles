@@ -9,7 +9,18 @@ fi
 
 . ~/.local_config.sh
 
+# RVM
 if [ -e ~/.rvm/scripts/rvm ] ; then
     . ~/.rvm/scripts/rvm
     . ~/.rvm/scripts/completion
+fi
+
+# nvm
+if [ -f "$HOME/.nvm/nvm.sh" ]  ; then
+	. "$HOME/.nvm/nvm.sh"
+fi
+
+# homebrew/bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
 fi

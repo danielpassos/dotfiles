@@ -9,13 +9,3 @@ PATH=$PATH:$HOME/.dotfiles/bin
 if [ -d $HOME/.rvm ] ; then
     PATH=$PATH:$HOME/.rvm/bin
 fi
-
-# homebrew/bash-completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
-fi
-
-# nvm
-if [ -f "$HOME/.nvm/nvm.sh" ]  ; then
-	. "$HOME/.nvm/nvm.sh"
-fi
