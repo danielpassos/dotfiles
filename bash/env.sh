@@ -1,3 +1,3 @@
 system=`uname`
 
-export EDITOR="=sublime-text-2"
+export EDITOR="=subl"
