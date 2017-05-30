@@ -1,7 +1,3 @@
-if [ -e ~/.bashrc.ori ]; then
-  . ~/.bashrc.ori
-fi
-
 . ~/.dotfiles/bash/env.sh
 . ~/.dotfiles/bash/prompt.sh
 . ~/.dotfiles/bash/aliases.sh

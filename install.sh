@@ -4,10 +4,6 @@ rm -rf ~/.dotfiles
 
 # Bash Files
 
-if [ -f ~/.bashrc ]; then
-	mv ~/.bashrc ~/.bashrc.ori
-fi
-
 if [ ! -f ~/.local_config.sh ]; then
 	touch ~/.local_config.sh
 fi
