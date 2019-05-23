@@ -34,8 +34,3 @@ cp ./tmux/tmux.conf ~/.tmux.conf
 if [ ! -f ~/.gitconfig ]; then
 	cp ./git/gitconfig ~/.gitconfig
 fi 
-
-if [ ! -f ~/.gitignore ]; then
-	cp ./git/gitignore ~/.gitignore
-	git config --global core.excludesfile ~/.gitignore
-fi 
