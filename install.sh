@@ -25,10 +25,6 @@ cp ./bash_profile   ~/.dotfiles/
 ln -sf ~/.dotfiles/bashrc        ~/.bashrc
 ln -sf ~/.dotfiles/bash_profile  ~/.bash_profile
 
-# tmux
-
-cp ./tmux/tmux.conf ~/.tmux.conf
-
 # Git
 
 if [ ! -f ~/.gitconfig ]; then
