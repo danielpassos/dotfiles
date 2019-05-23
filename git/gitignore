@@ -1,0 +1,25 @@
+##########   OSX   ##########
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+########## Intellij #########
+
+*.iml
+.idea/
+
+########### Maven ###########
+
+target/
+
+########## Gradle ###########
+
+.gradle
+/build/
+
+########## Android ##########
+
+local.properties
