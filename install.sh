@@ -8,10 +8,6 @@ if [ ! -f ~/.local_config.sh ]; then
 	touch ~/.local_config.sh
 fi
 
-if [ "$OSTYPE" == "darwin"* ] && [ ! -e /etc/launchd.conf ]; then
-	sudo touch /etc/launchd.conf
-fi
-
 # Install bash files
 
 mkdir -p ~/.dotfiles/bash
@@ -30,3 +26,7 @@ ln -sf ~/.dotfiles/bash_profile  ~/.bash_profile
 if [ ! -f ~/.gitconfig ]; then
 	cp ./git/gitconfig ~/.gitconfig
 fi 
+
+# ZSH
+
+cp ./zsh/zshrc ~/.zshrc
