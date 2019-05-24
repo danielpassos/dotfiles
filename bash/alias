@@ -4,17 +4,17 @@
 
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 
-alias ls='ls -Glah'
-alias grep='grep'
-alias fgrep='fgrep'
-
-if [[ "$system" == 'Linux' ]]; then
-   alias ls='ls -Glah --color=auto'
-   alias grep='grep --color=auto'
-   alias fgrep='fgrep --color=auto'
-fi
-
+alias ls='ls'
+alias lsa='ls -A'
+alias lsf='ls -A'
 alias lsd='ls -l | grep "^d"'		# List only directories
+
+if [ -x "$(command -v colorls)" ]; then
+  	alias ls='colorls --sd'
+	alias lsa='colorls -A --sd'
+	alias lsf='colorls -f'
+	alias lsd='colorls -d'
+fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -23,4 +23,5 @@ alias ....='cd ../../..'
 alias hosts='sudo vim /etc/hosts'
 
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
 alias psgrep="ps aux | egrep -v egrep | egrep"
