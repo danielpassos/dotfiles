@@ -110,11 +110,14 @@ source  ~/.local_config.sh
 prompt_context () { }
 
 # Powerlevel9k
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh root_indicator dir vcs newline status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-POWERLEVEL9K_MODE='nerdfont-complete'
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+if [ -d /usr/local/opt/powerlevel9k/ ]; then
+	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh root_indicator dir vcs newline status)
+	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+	POWERLEVEL9K_MODE='nerdfont-complete'
+	source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+fi
 
 # zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+if [ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi

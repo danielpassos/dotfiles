@@ -7,7 +7,7 @@ alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias ls='ls'
 alias lsa='ls -A'
 alias lsf='ls -A'
-alias lsd='ls -l | grep "^d"'		# List only directories
+alias lsd='ls | grep "^d"'		# List only directories
 
 if [ -x "$(command -v colorls)" ]; then
   	alias ls='colorls --sd'
