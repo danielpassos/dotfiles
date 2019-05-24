@@ -27,6 +27,11 @@ zsh_mac ()
 	    brew tap sambadevi/powerlevel9k && brew install powerlevel9k
 	fi
 
+	# Install zsh-autosuggestions
+	if [ ! -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	    brew install zsh-autosuggestions
+	fi
+
 	# Install colorsls
 	type zsh >/dev/null 2>&1 || {
 		gem install colorls
