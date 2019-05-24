@@ -77,9 +77,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-source  ~/.dotfiles/bash/aliases.sh
-source  ~/.dotfiles/bash/env.sh
-source  ~/.dotfiles/bash/path.sh
+source  ~/.dotfiles/bash/alias
+source  ~/.dotfiles/bash/env
 source  ~/.local_config.sh
 
 # User configuration

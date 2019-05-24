@@ -1,0 +1,4 @@
+. ~/.dotfiles/bash/env
+. ~/.dotfiles/bash/alias
+
+. ~/.local_config.sh
