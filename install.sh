@@ -2,6 +2,6 @@
 
 rm -rf ~/.dotfiles
 
+source ./scripts/zsh.sh
 source ./scripts/git.sh
 source ./scripts/bash.sh
-source ./scripts/zsh.sh
