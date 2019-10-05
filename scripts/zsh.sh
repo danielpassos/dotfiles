@@ -14,6 +14,7 @@ zsh_mac ()
 	# Install Brew
 	if [ ! -x "$(command -v brew)" ]; then
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" >> /dev/null
+		sudo chown -R $(whoami) $(brew --prefix)/*
 	fi	
 
 	# Install iTerm2
