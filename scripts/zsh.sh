@@ -2,6 +2,15 @@
 
 zsh_mac ()
 {
+
+	# Install RVM
+	if [ ! -d ~/.rvm ]; then
+		\curl -sSL https://get.rvm.io | bash -s stable
+		source ~/.bashrc
+		rvm install ruby
+		rvm --default use ruby
+	fi
+
 	# Install Brew
 	if [ ! -x "$(command -v brew)" ]; then
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" >> /dev/null
