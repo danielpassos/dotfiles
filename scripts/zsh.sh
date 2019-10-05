@@ -6,7 +6,7 @@ zsh_mac ()
 	# Install RVM
 	if [ ! -d ~/.rvm ]; then
 		\curl -sSL https://get.rvm.io | bash -s stable
-		source ~/.bashrc
+		source ~/.rvm/scripts/rvm
 		rvm install ruby
 		rvm --default use ruby
 	fi
