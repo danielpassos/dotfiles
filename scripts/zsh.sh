@@ -48,7 +48,7 @@ zsh_mac ()
 		gem install colorls >> /dev/null
 	fi
 
-	cp ./zsh/zshrc ~/.zshrc
+	cp -f ./zsh/zshrc ~/.zshrc
 }
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
