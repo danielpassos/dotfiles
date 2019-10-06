@@ -1,0 +1,47 @@
+# Load Antigen
+source $HOME/.antigen.zsh
+antigen use oh-my-zsh
+antigen bundle osx
+antigen bundle z
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen theme Powerlevel9k/powerlevel9k powerlevel9k
+antigen apply
+
+# shortcut to this dotfiles path is $ZSH
+export DOTFILES=$HOME/.dotfiles
+
+# Setting locale for terminal
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
+if [[ -f ~/.localrc ]]; then
+  source ~/.localrc
+fi
+
+# all of our zsh files
+typeset -U config_files
+config_files=($DOTFILES/**/*.zsh)
+
+# load the path files
+for file in ${(M)config_files:#*/path.zsh}
+do
+  source $file
+done
+
+# load everything except path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
+
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+
+# load completion files after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}
+do
+  source $file
+done
+
+unset config_files

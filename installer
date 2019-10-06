@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# Install Homebrew
+if test ! "$(command -v brew)"; then
+  
+  export APPS="ruby curl"
+  for APP in $APPS; do
+    if test ! "$(command -v "$APP")"; then
+      echo "Homebrew can't be installed because $APP seems be not installed"
+      exit 1
+    fi
+  done
+
+  echo "* Installing Homebrew"
+
+  if test "$(uname)" = "Darwin"; then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 1>/dev/null
+  elif test "$(uname)" = "Linux"; then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)" 1>/dev/null
+  fi
+fi
+
+# Install brew apps
+brew bundle
+
+if [ -e ~/.Brewfile ]; then
+  brew bundle --file=~/.Brewfile
+fi
+
+# Install oh-my-zsh
+if [ ! -f ~/.antigen.zsh ]; then
+  curl -s -L git.io/antigen > ~/.antigen.zsh
+fi
+
+if [ ! -d ~/.oh-my-zsh/ ]; then
+  echo "* Installing oh-my-zsh"
+  git clone --quiet https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh > /dev/null
+  ZSH_PATH=$(command -v zsh)
+  if ! grep -q "$ZSH_PATH" '/etc/shells'; then
+    echo "$ZSH_PATH" | sudo tee -a /etc/shells
+  fi
+  chsh -s "$ZSH_PATH"
+fi
+

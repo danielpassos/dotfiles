@@ -1,0 +1,38 @@
+[include]
+    path = ~/.gitconfig.local
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+[hub]
+    protocol = https
+[alias]
+    st = status
+    br = branch
+    lg = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    pullify = "config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*'"
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    ui = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[commit]
+	gpgsign = true
+[difftool]
+    prompt = false
+[help]
+    autocorrect = 1
+[credential]
+    helper = osxkeychain
