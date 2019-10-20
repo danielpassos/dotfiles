@@ -23,16 +23,16 @@ fi
 # Install brew apps
 brew bundle
 
-if [ -e ~/.Brewfile ]; then
+if [[ -e ~/.Brewfile ]]; then
   brew bundle --file=~/.Brewfile
 fi
 
 # Install oh-my-zsh
-if [ ! -f ~/.antigen.zsh ]; then
+if [[ ! -f ~/.antigen.zsh ]]; then
   curl -s -L git.io/antigen > ~/.antigen.zsh
 fi
 
-if [ ! -d ~/.oh-my-zsh/ ]; then
+if [[ ! -d ~/.oh-my-zsh/ ]]; then
   echo "* Installing oh-my-zsh"
   git clone --quiet https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh > /dev/null
   ZSH_PATH=$(command -v zsh)

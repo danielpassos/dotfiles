@@ -3,7 +3,7 @@ alias lsa='ls -A'
 alias lsf='ls -A'
 alias lsd='ls | grep "^d"'
 
-if [ -x "$(command -v colorls)" ]; then
+if test "$(command -v colorls)"; then
   alias ls='colorls --sd'
 	alias lsa='colorls -A --sd'
 	alias lsf='colorls -f'

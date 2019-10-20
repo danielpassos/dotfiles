@@ -7,12 +7,12 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme Powerlevel9k/powerlevel9k powerlevel9k
 antigen apply
 
-# shortcut to this dotfiles path is $ZSH
+# shortcut to this dotfiles path
 export DOTFILES=$HOME/.dotfiles
 
 # Setting locale for terminal
-LC_CTYPE=en_US.UTF-8
-LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 if [[ -f ~/.localrc ]]; then
   source ~/.localrc
