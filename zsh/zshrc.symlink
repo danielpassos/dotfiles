@@ -29,17 +29,7 @@ do
 done
 
 # load everything except path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
-do
-  source $file
-done
-
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
-
-# load completion files after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}
+for file in ${config_files:#*/path.zsh}
 do
   source $file
 done
