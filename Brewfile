@@ -1,6 +1,5 @@
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
-tap "caskroom/cask"
 tap "sambadevi/powerlevel9k"
 
 brew "mas"

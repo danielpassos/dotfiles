@@ -2,22 +2,8 @@
 
 # Install Homebrew
 if test ! "$(command -v brew)"; then
-  
-  export APPS="ruby curl"
-  for APP in $APPS; do
-    if test ! "$(command -v "$APP")"; then
-      echo "Homebrew can't be installed because $APP seems be not installed"
-      exit 1
-    fi
-  done
-
-  echo "* Installing Homebrew"
-
-  if test "$(uname)" = "Darwin"; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 1>/dev/null
-  elif test "$(uname)" = "Linux"; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)" 1>/dev/null
-  fi
+  echo "Homebrew is not installed!"
+  exit 1
 fi
 
 # Install brew apps

@@ -14,8 +14,7 @@ using [mas](https://github.com/mas-cli/mas) (for apps I use from Apple Store) an
 
 ## Prerequisites
 
-If you don't have [Homebrew](https://brew.sh) installed, the [installer](installer) will take care of it but... 
-you need to have [Ruby](https://www.ruby-lang.org) and [curl](https://curl.haxx.se/) installed.
+1. [Homebrew](https://brew.sh)
 
 ### Mac
 
@@ -29,7 +28,6 @@ If you are on Mac I recommend:
 
 `sh installer` will: 
 
-1. Install [Homebrew](https://brew.sh);
 1. Install all apps listed on [Brewfile](Brewfile);
 1. Install [antigen](https://github.com/zsh-users/antigen) and [Oh My Zsh](https://ohmyz.sh/) 
 
