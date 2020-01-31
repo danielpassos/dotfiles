@@ -1,7 +1,8 @@
-# dotfiles
-
 <p align="center">
-This is my way to personalize my system. 
+  <img src="terminal-icon.png" />
+</p>
+<p align="center">
+  This is my way to personalize my terminal. 
 </p>
 
 Based on [holman's article](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/), 
