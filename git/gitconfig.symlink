@@ -8,7 +8,8 @@
 [alias]
     st = status
     br = branch
-    lg = log --graph --pretty=format:"%C(yellow)[%h] %C(red)(%ad) %C(green)%an: %C(white)%s" --date="format:%F %T"
+    lg = log --graph --pretty=format:'%C(yellow)[%h] %C(green)%an: %C(white)%s' --date='format:%F %T'
+    lgt = log --graph --pretty=format:'%C(yellow)[%h] %C(white)(%ad) %C(green)%an: %C(white)%s' --date='format:%F %T'
     pullify = "config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*'"
 [color]
     branch = auto
