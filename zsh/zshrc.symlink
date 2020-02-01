@@ -1,9 +1,14 @@
 # Load Antigen
 source $HOME/.antigen.zsh
+
 antigen use oh-my-zsh
-antigen bundle osx
-antigen bundle z
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundles <<EOBUNDLES
+  command-not-found
+  git
+  osx
+  z
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
 antigen theme Powerlevel9k/powerlevel9k powerlevel9k
 antigen apply
 
@@ -28,7 +33,7 @@ do
   source $file
 done
 
-# load everything except path and completion files
+# load everything except path
 for file in ${config_files:#*/path.zsh}
 do
   source $file
