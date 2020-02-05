@@ -17,3 +17,8 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias psgrep="ps aux | egrep -v egrep | egrep"
 
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+alias obf="open ~/.Brewfile"
+
+# Get macOS Software Updates, Homebrew and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
