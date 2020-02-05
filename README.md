@@ -29,7 +29,7 @@ If you are on Mac I recommend:
 
 `sh installer` 
 
-1. Install all apps listed on [Brewfile](Brewfile);
+1. Install all apps listed on [Brewfile](homebrew/Brewfile);
 1. Install [antigen](https://github.com/zsh-users/antigen) and [Oh My Zsh](https://ohmyz.sh/) 
 
 ### Local Brewfile
