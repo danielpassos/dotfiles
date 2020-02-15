@@ -3,13 +3,21 @@
 [core]
     excludesfile = ~/.gitignore
     editor = vim
+    commitGraph = true
 [hub]
     protocol = https
+[difftool]
+    prompt = false
+[help]
+    autocorrect = 1
+[credential]
+    helper = osxkeychain
 [alias]
-    st = status
-    br = branch
-    lg = log --graph --pretty=format:'%C(yellow)[%h] %C(green)%an: %C(white)%s' --date='format:%F %T'
+    st  = status
+    br  = branch
+    lg  = log --graph --pretty=format:'%C(yellow)[%h] %C(green)%an: %C(white)%s' --date='format:%F %T'
     lgt = log --graph --pretty=format:'%C(yellow)[%h] %C(white)(%ad) %C(green)%an: %C(white)%s' --date='format:%F %T'
+    sq  = "!git rebase -i HEAD~\"$1\" #"
     pullify = "config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/pr/*'"
 [color]
     branch = auto
@@ -29,11 +37,3 @@
     added = yellow
     changed = green
     untracked = cyan
-[commit]
-	gpgsign = true
-[difftool]
-    prompt = false
-[help]
-    autocorrect = 1
-[credential]
-    helper = osxkeychain
