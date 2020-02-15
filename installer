@@ -3,11 +3,9 @@
 set -e
 
 if [[ $EUID -eq 0 ]]; then
-   echo "Don't run this as root!"
-   exit 1
+  echo "Don't run this as root!"
+  exit 1
 fi
 
-cd "$(dirname "$0")"/..
-
 # find the installers and run them iteratively
-find . -name install.sh | while read -r installer ; do sh -c "${installer}" ; done
+find . -name install.sh | while read -r installer; do sh -c "${installer}"; done
