@@ -1,7 +1,7 @@
-<p style="text-align:center;">
+<p align="center">
   <img src="terminal-icon.png"  alt="Terminal icon"/>
 </p>
-<p style="text-align:center;">
+<p align="center">
   This is my way to personalize my terminal. 
 </p>
 
@@ -15,14 +15,11 @@ using [mas](https://github.com/mas-cli/mas) (for apps I use from Apple Store) an
 
 ## Prerequisites
 
-1. [Homebrew](https://brew.sh)
-
 ### Mac
 
 If you are on Mac I recommend:
 
-1. Make sure you already have logged in on Apple store to be able to use  [mas](https://github.com/mas-cli/mas)
-1. Run `sudo softwareupdate -i -a` to update your machine
+1. Make sure you already have logged in on Apple store to be able to use [mas](https://github.com/mas-cli/mas)
 1. Run `xcode-select --install`
 
 ## Install
