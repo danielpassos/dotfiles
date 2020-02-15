@@ -9,7 +9,7 @@ if test ! "$(command -v brew)"; then
 fi
 
 # Install brew apps
-brew bundle
+brew bundle --file=./homebrew/Brewfile
 
 if [[ -e ~/.Brewfile ]]; then
   brew bundle --file=~/.Brewfile
