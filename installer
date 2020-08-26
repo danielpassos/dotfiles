@@ -7,5 +7,10 @@ if [[ $EUID -eq 0 ]]; then
   exit 1
 fi
 
+if test ! "$(command -v brew)"; then
+  echo "Homebrew required. Install it from https://brew.sh/"
+  exit 1
+fi
+
 # find the installers and run them iteratively
 find . -name install.sh | while read -r installer; do sh -c "${installer}"; done
