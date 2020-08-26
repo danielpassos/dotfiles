@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+set -e
+
+display_folder_size()
+{
+  if [[ -d $1 ]]; then
+	  echo "- $(du -sh "$1")"
+	fi
+}
+
+remove_folder()
+{
+  if [[ -d $1 ]]; then
+	  rm -rf "$1"
+	fi
+}
+
+folders=(
+  "$HOME/Library/Messages/Attachments"
+  "$HOME/.cache"
+  "$HOME/.gradle/caches"
+  "$HOME/.gradle/wrapper"
+  "$HOME/.m2/repository"
+  "$HOME/.gem/"
+  "$HOME/.npm/_cacache"
+  "$HOME/.sdkman/archives"
+  "$HOME/Library/Caches"
+  "$HOME/Library/Application Support/Caches"
+  "$HOME/.local/share/dev/tophat"
+  "$HOME/Library/Developer/CoreSimulator/Devices"
+  "$HOME/Library/Developer/CoreSimulator/Caches"
+  "$HOME/Library/Developer/Xcode/DerivedData/Shopify*"
+  "$HOME/Library/Caches/AndroidStudio*/caches"
+  "$HOME/Library/Android/sdk/system-images"
+  "$HOME/src/github.com/Shopify/android"
+  "$HOME/src/github.com/Shopify/ios"
+  "$HOME/src/github.com/Shopify/web"
+  "$HOME/src/github.com/Shopify/shopify"
+)
+
+echo "* Cleanup cache files"
+for folder in "${folders[@]}"
+do
+  display_folder_size "$folder"
+  #remove_folder "$folder"
+done
