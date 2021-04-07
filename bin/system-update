@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# OSX
+softwareupdate --all --install --force
+
+# Command line apps
+brew update
+brew upgrade
+
+# Mac Apps via cask
+brew cu -a -f
+
+# Mac apps via mas
+mas upgrade
+

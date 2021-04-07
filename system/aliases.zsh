@@ -20,5 +20,6 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 
 alias obf="open ~/.Brewfile"
 
-# Get macOS Software Updates, Homebrew and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
+alias uuid='uuidgen | tr "[:upper:]" "[:lower:]"'
+
+alias reload!='. ~/.zshrc && clear'

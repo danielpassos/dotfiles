@@ -25,7 +25,6 @@ folders=(
   "$HOME/.gem/"
   "$HOME/.npm/_cacache"
   "$HOME/.sdkman/archives"
-  "$HOME/Library/Caches"
   "$HOME/Library/Application Support/Caches"
   "$HOME/.local/share/dev/tophat"
   "$HOME/Library/Developer/CoreSimulator/Devices"
