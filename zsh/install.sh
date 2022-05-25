@@ -1,6 +1,7 @@
 # Install antigen
 if [[ ! -f ~/.antigen.zsh ]]; then
-  curl -s -L git.io/antigen >~/.antigen.zsh
+  echo "* Installing antigen"
+  curl -s -L git.io/antigen > ~/.antigen.zsh
 fi
 
 # Install oh-my-zsh
