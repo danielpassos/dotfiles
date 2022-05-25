@@ -5,7 +5,7 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
   command-not-found
   git
-  osx
+  macos
   z
   zsh-users/zsh-syntax-highlighting
 EOBUNDLES
