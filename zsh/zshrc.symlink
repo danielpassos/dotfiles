@@ -6,6 +6,7 @@ antigen bundles <<EOBUNDLES
   command-not-found
   git
   macos
+  sdk
   z
   zsh-users/zsh-syntax-highlighting
 EOBUNDLES
