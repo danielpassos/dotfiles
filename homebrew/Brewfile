@@ -1,10 +1,6 @@
-tap "buo/cask-upgrade"
-tap "homebrew/services"
-tap "homebrew/cask-fonts"
-tap "sambadevi/powerlevel9k"
-
+brew "font-meslo-lg-nerd-font"
 brew "mas"
-brew "powerlevel9k"
+brew "powerlevel10k"
 brew "zsh"
 brew "zsh-autosuggestions"
-cask "font-meslo-lg-nerd-font"
+brew "zsh-syntax-highlighting"
