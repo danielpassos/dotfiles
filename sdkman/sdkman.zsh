@@ -1,5 +1,5 @@
-if [[ -d $HOME/.sdkman ]]; then
-  export SDKMAN_DIR="$HOME/.sdkman"
-  # shellcheck source=$HOME/.sdkman/bin/sdkman-init.sh
-  [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+if test "$(command -v sdk)"; then
+  # shellcheck disable=SC2155
+  export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+  [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 fi
