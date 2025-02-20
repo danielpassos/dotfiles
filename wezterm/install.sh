@@ -2,4 +2,5 @@ echo "* Installing wezterm"
 brew install wezterm
 
 echo "* Copying wezterm config"
-cp ./wezterm/wezterm.lua "$HOME/.wezterm.lua"
+mkdir -p "$HOME/.config/wezterm"
+cp ./wezterm/wezterm.lua "$HOME/.config/wezterm/wezterm.lua"
