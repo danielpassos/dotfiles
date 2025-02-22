@@ -26,13 +26,13 @@ If you are on Mac I recommend:
 
 `sh installer` 
 
-1. Install all apps listed on [Brewfile](homebrew/Brewfile);
-1. Install [antigen](https://github.com/zsh-users/antigen) and [Oh My Zsh](https://ohmyz.sh/) 
+1. Install zsh
+1. Execute all `install.sh` files
 
 ### Local Brewfile
 
-To add your own list of apps to the brew installation process, create your own 
-[Brewfile](https://github.com/Homebrew/homebrew-bundle) on your home directory (`~/.Brewfile`) 
+To add your own list of apps to the brew installation process, 
+create your own [Brewfile](https://github.com/Homebrew/homebrew-bundle) on your home directory (`~/.Brewfile`) 
 
 ## Bootstrap
 
