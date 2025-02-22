@@ -3,5 +3,5 @@ brew instal mas
 
 if [[ -e ~/.Brewfile ]]; then
   echo "* Installing brew personal apps (~/.Brewfile)"
-  brew bundle --file=~/.Brewfile >/dev/null
+  brew bundle --file=~/.Brewfile
 fi
