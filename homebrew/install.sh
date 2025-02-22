@@ -1,5 +1,5 @@
-echo "* Installing brew dotfiles apps"
-brew bundle --file=./homebrew/Brewfile >/dev/null
+echo "* Installing mas"
+brew instal mas
 
 if [[ -e ~/.Brewfile ]]; then
   echo "* Installing brew personal apps (~/.Brewfile)"

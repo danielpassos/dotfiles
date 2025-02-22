@@ -1,5 +1,0 @@
-brew "font-meslo-lg-nerd-font"
-brew "mas"
-brew "zsh"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
