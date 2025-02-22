@@ -1,6 +1,5 @@
 brew "font-meslo-lg-nerd-font"
 brew "mas"
-brew "powerlevel10k"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
