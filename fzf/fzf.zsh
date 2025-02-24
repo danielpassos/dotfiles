@@ -42,6 +42,6 @@ if test "$(command -v fzf)"; then
   # - Add fzf-git.sh
   if [ ! -e "$HOME/.dotfiles/fzf/fzf-git.sh" ]; then
     wget --quiet --directory-prefix="$HOME/.dotfiles/fzf" https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh
-    source "$HOME/.dotfiles/fzf/fzf-git.sh"
   fi
+  source "$HOME/.dotfiles/fzf/fzf-git.sh"
 fi
