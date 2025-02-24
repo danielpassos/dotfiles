@@ -1,4 +1,4 @@
-echo "* zsh"
+echo "* Installing zsh"
 
 brew install zsh
 brew install zsh-autosuggestions
