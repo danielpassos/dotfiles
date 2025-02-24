@@ -1,15 +1,3 @@
-alias ls='ls'
-alias lsa='ls -A'
-alias lsf='ls -A'
-alias lsd='ls | grep "^d"'
-
-if test "$(command -v colorls)"; then
-  alias ls='colorls --sd'
-	alias lsa='colorls -A --sd'
-	alias lsf='colorls -f'
-	alias lsd='colorls -d'
-fi
-
 alias hosts='sudo vim /etc/hosts'
 
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
