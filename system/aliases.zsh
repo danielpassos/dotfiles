@@ -1,3 +1,7 @@
+alias ..="cd .."
+alias ...="cd ../.. "
+alias ....="cd ../../.."
+
 alias hosts='sudo vim /etc/hosts'
 
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
