@@ -13,7 +13,6 @@ config.window_frame = {
 config.window_close_confirmation = 'NeverPrompt'
 
 config.keys = {
-  # https://wezterm.org/config/lua/keyassignment/PromptInputLine.html
   {
     key = 'E',
     mods = 'CTRL|SHIFT',
