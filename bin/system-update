@@ -11,5 +11,6 @@ brew upgrade
 brew cu -a -f
 
 # Mac apps via mas
+brew tap buo/cask-upgrade
 mas upgrade
 
