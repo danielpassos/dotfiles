@@ -8,3 +8,8 @@ export HISTSIZE=10000    # Lines of history to keep in memory
 setopt appendhistory     # Append history to the file (no overwriting)
 setopt sharehistory      # Share history across terminals
 setopt incappendhistory  # Immediately append to the file, not when term killed
+
+##############################################################################
+# Colors                                                                     #
+##############################################################################
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#5f6b7a'
